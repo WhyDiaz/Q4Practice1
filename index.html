@@ -15,7 +15,10 @@
         function checkAge() {
         var Age = document.getElementById("Age").value;
 
-            if(Age<18){
+            if (isNaN(Age)) || (Age <0){
+                alert("Please enter a valid age you idiot you swine you piece of #### are you unable to comprehend numbers hm? or are you");
+            }
+            else if(Age<18){
                 alert("You are a minor. And enjoy your childhood.");
             }
            
