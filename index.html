@@ -8,16 +8,19 @@
 <body>
     <h1>JavaScript Conditional Statements</h1>
 
+    <input type="text" class="form-control" id="Age" placeholder="Tell us your age NOW">
     <button class="btn btn-info" onclick="checkAge()">checkAge</button>
 
     <script>
         function checkAge() {
-            if(19<18){
-                alert("You are a minor.");
+        var Age = document.getElementById("Age").value;
+
+            if(Age<18){
+                alert("You are a minor. And enjoy your childhood.");
             }
            
-            else if(19>18){
-                alert("You are an adult.");
+            else if(Age>18){
+                alert("You are an adult and you can do whatever you want. However, you should be responsible for your actions. Moreover, you should be careful about your health and safety. Lastly, you should be careful about your financial situation.");
             }    
            
             else{
